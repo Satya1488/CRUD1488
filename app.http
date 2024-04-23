@@ -1,0 +1,48 @@
+
+GET http://localhost:3000/customers
+###
+
+GET http://localhost:3000/address
+###
+
+GET http://localhost:3000/customers/2
+###
+
+
+GET http://localhost:3000/address/1
+###
+
+DELETE https://localhost:3000/2
+###
+
+POST http://localhost:3000/customers/
+Content-Type: application/json 
+
+{
+    "name": "Hanu",
+    "age" : 23,
+    "phone" : 1234567,
+    "email": "hanu@gmail.com",
+    "created_on" : "2020-2-12",
+    "updated_on" : "2021-3-14",
+    "address_id" : 3
+}
+
+### 
+
+GET http://localhost:3000/customers/1
+###
+
+PUT http://localhost:3000/customers/1
+Content-Type: application/json
+
+{
+    "name": "Shankar",
+    "age" : 24,
+    "phone" : 12234567,
+    "email": "shankar@gmail.com",
+    "created_on" : "2021-2-12",
+    "updated_on" : "2022-3-14",
+    "address_id" : 4
+}
+###
